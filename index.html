@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abas Todo App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-title">Min Todo Lista</h1>
+        <form id="todoForm" class="todo-form">
+            <input type="text" id="todoInput" placeholder="Vad behöver du göra?" required />
+            <button type="submit">Lägg Till Todo</button>
+        </form>
+        <ul id="todoList" class="todo-list"></ul>
+        <div id="modal" class="modal hidden">
+            <p>Du kan inte ta bort en ofullbordad todo.</p>
+            <button id="closeModal">Stäng</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
